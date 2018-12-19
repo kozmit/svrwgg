@@ -1,0 +1,34 @@
+
+.content{
+  min-height:100vh;
+  text-align:center;
+}
+
+.nextEvents{
+  margin-top: 8%;
+}
+
+.nextEvents_container{
+  width:60%;
+  margin-left:20%;
+  border-bottom: solid 1px black;
+  margin-top: 4%;
+}
+
+.nextEvents_container:last-of-type{
+  border-bottom:none;
+}
+
+@media (max-width:450px) {
+
+  .nextEvents_container{
+    width:80%;
+    margin-left:10%;
+    border-bottom: solid 1px black;
+    margin-top: 5%;
+  }
+
+}
+
+
+

@@ -1,0 +1,91 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <div class="calendar_container">
+      <div>
+        <div class="month">
+          <ul>
+            <li><button class="month-switchbutton" (click)="monthBack()"> < </button></li>
+            <li class="current-month">
+              <ng-container *ngIf="month == 1">Januar {{year}}</ng-container>
+              <ng-container *ngIf="month == 2">Februar {{year}}</ng-container>
+              <ng-container *ngIf="month == 3">März {{year}}</ng-container>
+              <ng-container *ngIf="month == 4">April {{year}}</ng-container>
+              <ng-container *ngIf="month == 5">Mai {{year}}</ng-container>
+              <ng-container *ngIf="month == 6">Juni {{year}}</ng-container>
+              <ng-container *ngIf="month == 7">Juli {{year}}</ng-container>
+              <ng-container *ngIf="month == 8">August {{year}}</ng-container>
+              <ng-container *ngIf="month == 9">September {{year}}</ng-container>
+              <ng-container *ngIf="month == 10">Oktober {{year}}</ng-container>
+              <ng-container *ngIf="month == 11">November {{year}}</ng-container>
+              <ng-container *ngIf="month == 12">Dezember {{year}}</ng-container>
+            </li>
+            <li><button class="month-switchbutton" (click)="monthForward()"> > </button></li>
+          </ul>
+        </div>
+        <ul class="weekdays">
+          <li>MO</li>
+          <li>DI</li>
+          <li>MI</li>
+          <li>DO</li>
+          <li>FR</li>
+          <li>SA</li>
+          <li>SO</li>
+        </ul>
+
+        <div *ngFor="let day of preDays">
+          <div *ngIf="day.termine.length != 0">
+            <button class="calendar-day-off_event" (click)="ChooseEvent(-1, day.day)">{{day.day}}
+              <div class="event_indicator_on">•</div>
+            </button>
+          </div>
+          <div *ngIf="day.termine.length == 0">
+            <button class="calendar-day-off_free" (click)="ChooseEvent(0)">{{day.day}}
+              <div class="event_indicator_off">•</div>
+            </button>
+          </div>
+        </div>
+
+        <div *ngFor="let day of currentDays">
+            <div *ngIf="day.termine.length != 0">
+              <button class="calendar-day_event" #preferedDay value={{day}} (click)="ChooseEvent(0, day.day)">{{day.day}}
+                <div class="event_indicator_on">•</div>
+              </button>
+            </div>
+            <div *ngIf="day.termine.length == 0">
+              <button class="calendar-day_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
+                <div class="event_indicator_off">•</div>
+              </button>
+            </div>
+        </div>
+
+        <div *ngFor="let day of postDays">
+          <div *ngIf="day.termine.length != 0">
+            <button class="calendar-day-off_event" #preferedDay value={{day}} (click)="ChooseEvent(1, day.day)">{{day.day}}
+              <div class="event_indicator_on">•</div>
+            </button>
+          </div>
+          <div *ngIf="day.termine.length == 0">
+            <button class="calendar-day-off_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
+              <div class="event_indicator_off">•</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event_container">
+      <div class="event_title">
+        Termine<br>
+        _____________________________________________
+      </div>
+      <div class="event_details" *ngIf="choosenEvents != []">
+        <ng-container *ngFor="let event of choosenEvents">
+            {{event.hour}}:{{event.minute}} - {{event.event}} <br>
+        </ng-container>
+      </div>
+    </div>
+  </body>
+</html>

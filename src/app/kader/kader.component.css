@@ -1,0 +1,42 @@
+
+.text_description{
+  text-align:center;
+}
+
+.kader_info{
+  width: 90%;
+  margin-left:5%;
+}
+
+.player_container{
+  margin: 1%;
+  float:left;
+  height: 10%;
+  width:45%;
+  padding:2px;
+  border: solid;
+  border-width: 1px;
+}
+
+.player_info{
+  font-size: 15px;
+  height:90%;
+  width:60%;
+  float:right;
+}
+
+.player_picture{
+  height:90%;
+  width:35%;
+  max-width: 80px;
+}
+
+@media (max-width:450px) {
+
+  .text_description{
+    font-size:15px;
+  }
+  .player_info{
+    font-size: 8px;
+  }
+}

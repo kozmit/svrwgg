@@ -1,0 +1,51 @@
+.side_content{
+  min-height: 100vh;
+}
+
+.post_container{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: solid;
+  border-width: 1px;
+  margin-left:10%;
+  width:80%;
+  padding:2%;
+  margin-top:5%;
+}
+
+.post_container:last-of-type{
+  border-bottom: none;
+}
+
+.post_title{
+  color:red;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.post_date{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.post_content{
+  margin-top:10px;
+  margin-bottom:20px;
+  font-size:15px;
+}
+
+.post_icon_facebook{
+  height:25px;
+  width:25px;
+}
+
+.post_icon_instagram{
+  height:25px;
+  width:25px;
+  margin-left:5px;
+}
+
+.post_icon_twitter{
+  height:25px;
+  width:25px;
+  margin-left:5px;
+}

@@ -1,0 +1,163 @@
+body{
+  height:120vh;
+}
+
+*{
+  font-size:20px;
+}
+
+.calendar_container{
+  margin-left:5%;
+  margin-top:5%;
+  width:90%;
+  height:70vh;
+}
+
+.month {
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  display:inline-block;
+  letter-spacing: 3px;
+  font-weight:bold;
+}
+
+.current-month{
+  width:80%;
+}
+
+.month-switchbutton{
+  background-color:white;
+  border:none;
+  outline:none;
+  width:10%;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 0px 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.days {
+  padding: 0px 0;
+  margin: 0;
+}
+
+.calendar-day_free{
+  border:3px;
+  border-style:solid;
+  border-color:white;
+  color:black;
+  width:13.6%;
+  height: 10%;
+  font-weight: bold;
+  background-color: white;
+  float:left;
+}
+
+.calendar-day-off_free{
+  border:3px;
+  border-style:solid;
+  border-color:white;
+  color:grey;
+  width:13.6%;
+  height: 10%;
+  background-color: white;
+  float:left;
+}
+
+.calendar-day_event{
+  border:3px;
+  border-style:solid;
+  border-color:white;
+  color:black;
+  width:13.6%;
+  height: 10%;
+  font-weight: bold;
+  background-color: white;
+  float:left;
+}
+
+.calendar-day-off_event{
+  border:3px;
+  border-style:solid;
+  border-color:white;
+  color:grey;
+  width:13.6%;
+  height: 10%;
+  background-color: white;
+  float:left;
+}
+
+.calendar-day_free:focus{
+  outline:none;
+  color:red;
+}
+
+.calendar-day-off_free:focus{
+  outline:none;
+  color:red;
+  font-weight: bold;
+}
+
+.calendar-day_event:focus{
+  outline:none;
+  color:red;
+}
+
+.calendar-day-off_event:focus{
+  outline:none;
+  color:red;
+  font-weight: bold;
+}
+
+.event_indicator_on{
+  position:relative;
+  top:-10px;
+  color: rgba(0,0,0,1);
+}
+
+.event_indicator_off{
+  color: rgba(0,0,0,0);
+}
+
+.event_container{
+  height:30vh;
+  width:100%;
+}
+
+.event_title{
+  text-align: center;
+  font-weight:bold;
+
+}
+
+.event_details{
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  *{
+    font-size: 15px;
+  }
+}
+

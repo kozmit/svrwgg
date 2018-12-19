@@ -1,0 +1,43 @@
+
+<div class="content">
+
+
+  <div>
+
+    <br>
+    <h1>Willkommen</h1>
+    <br>
+    auf der offiziellen Seite des SV Rot-Weiß Groß Gleidingen
+    <br>
+    <br>
+    Hier finden Sie alle Infos zu anstehenden Spielen, dem aktuellen Kader oder sonstigen Terminen.
+
+  </div>
+
+  <div class="nextEvents">
+
+    <div style="font-weight:bold">
+
+      <u>Anstehende Termine</u>
+
+    </div>
+
+    <div class="nextEvents_container" *ngFor="let event of nextEvents">
+
+      <div style="font-weight:bold;">
+
+        {{event.day}}.{{event.month}}.{{event.year}} - {{event.hour}}:{{event.minute}}
+
+      </div>
+
+      {{event.event}}
+
+      <br>
+      <br>
+
+    </div>
+
+  </div>
+
+</div>
+
