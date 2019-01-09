@@ -71,8 +71,6 @@ body{
 .navbar_link:hover{
   color: rgb(253, 113, 113);
   text-decoration: none;
-  border-bottom: 2px solid white;
-  border-color: rgb(255, 189, 189);
 }
 
 .navbar_link_highlighted{
