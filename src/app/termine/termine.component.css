@@ -1,7 +1,3 @@
-body{
-  height:120vh;
-}
-
 *{
   font-size:20px;
 }
@@ -10,7 +6,7 @@ body{
   margin-left:5%;
   margin-top:5%;
   width:90%;
-  height:70vh;
+  height: 50vh;
 }
 
 .month {
@@ -35,6 +31,7 @@ body{
 
 .current-month{
   width:80%;
+  font-size: 30px;
 }
 
 .month-switchbutton{
@@ -42,11 +39,16 @@ body{
   border:none;
   outline:none;
   width:10%;
+  font-size:30px;
+  font-weight:bold;
 }
 
 .weekdays {
-    margin: 0;
-    padding: 0px 0;
+  margin: 0;
+  padding: 0px 0;
+  background-color: rgba(255, 0, 0, 0.9);
+  border-radius:15px;
+  color:white;
 }
 
 .weekdays li {
@@ -62,19 +64,19 @@ body{
 }
 
 .calendar-day_free{
-  border:3px;
+  border:0px;
   border-style:solid;
   border-color:white;
   color:black;
   width:13.6%;
   height: 10%;
   font-weight: bold;
-  background-color: white;
+  background-color: rgb(243, 243, 243);
   float:left;
 }
 
 .calendar-day-off_free{
-  border:3px;
+  border:0px;
   border-style:solid;
   border-color:white;
   color:grey;
@@ -85,19 +87,19 @@ body{
 }
 
 .calendar-day_event{
-  border:3px;
+  border:0px;
   border-style:solid;
   border-color:white;
   color:black;
   width:13.6%;
   height: 10%;
   font-weight: bold;
-  background-color: white;
+  background-color: rgb(243, 243, 243);
   float:left;
 }
 
 .calendar-day-off_event{
-  border:3px;
+  border:0px;
   border-style:solid;
   border-color:white;
   color:grey;
@@ -158,6 +160,18 @@ body{
 @media (max-width: 450px) {
   *{
     font-size: 15px;
+  }
+
+  .calendar_container{
+    height:50vh;
+  }
+  .current-month{
+    font-size: 18px;
+  }
+
+  .month-switchbutton{
+    font-size:18px;
+    font-weight:bold;
   }
 }
 
