@@ -9,6 +9,8 @@ import { KaderComponent } from './kader/kader.component';
 
 import { TermineComponent } from './termine/termine.component';
 
+import { ImpressumComponent } from './impressum/impressum.component';
+
 
 const router: Routes = [
 
@@ -21,6 +23,8 @@ const router: Routes = [
   { path: 'kader', component: KaderComponent },
 
   { path: 'termine', component: TermineComponent },
+
+  { path: 'impressum', component: ImpressumComponent },
 
 ];
 

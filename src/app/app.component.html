@@ -29,10 +29,10 @@
 
         <!--Navbar Link 1-->
         <div class="navbar_entry" *ngIf="highlight != 1">
-          <a class="navbar_link" routerLink="home" (click)="SetHightlight(1)">Home</a>
+          <a class="navbar_link" routerLink="home" (click)="SetHightlight(1)">Startseite</a>
         </div>
         <div class="navbar_entry" *ngIf="highlight == 1">
-          <a class="navbar_link_highlighted" routerLink="home" (click)="SetHightlight(1)">Home</a>
+          <a class="navbar_link_highlighted" routerLink="home" (click)="SetHightlight(1)">Startseite</a>
         </div>
 
         <!--Navbar Link 2-->
@@ -42,7 +42,7 @@
         <div class="navbar_entry" *ngIf="highlight == 2">
           <a class="navbar_link_highlighted" routerLink="kader" (click)="SetHightlight(2)">Kader</a>
         </div>
-        
+
 
         <!--Navbar Link 3-->
         <div class="navbar_entry" *ngIf="highlight != 3">
@@ -59,12 +59,35 @@
         <div class="navbar_entry" *ngIf="highlight == 4">
           <a class="navbar_link_highlighted" routerLink="termine" (click)="SetHightlight(4)">Termine</a>
         </div>
+
+        <!--Navbar Link 5-->
+        <div class="navbar_entry" *ngIf="highlight != 5">
+          <a class="navbar_link" routerLink="impressum" (click)="SetHightlight(5)">Impressum</a>
+        </div>
+        <div class="navbar_entry" *ngIf="highlight == 5">
+          <a class="navbar_link_highlighted" routerLink="impressum" (click)="SetHightlight(5)">Impressum</a>
+        </div>
       </div>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+      <slideshow
+              [height]="200"
+              [minHeight]="'200px'"
+              [autoPlay]="true"
+              [showArrows]="true"
+              [lazyLoad]="this.imageUrlArray?.length > 1"
+              [autoPlayWaitForLazyLoad]="true"
+              [imageUrls]="this.imageUrlArray">
+      </slideshow>
     </div>
 
     <!-- Seitencontent -->
     <div class="side_content">
+
       <router-outlet></router-outlet>
+
     </div>
 
     <!-- Bottombar -->

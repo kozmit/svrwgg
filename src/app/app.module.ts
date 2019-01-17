@@ -11,6 +11,9 @@ import { TermineComponent } from './termine/termine.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { ImpressumComponent } from './impressum/impressum.component';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +21,15 @@ import { HomeComponent } from './home/home.component';
     KaderComponent,
     BlogComponent,
     TermineComponent,
-    HomeComponent
+    HomeComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
     AppRoutingModule,
+    SlideshowModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

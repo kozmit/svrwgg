@@ -35,44 +35,42 @@
           <li>SO</li>
         </ul>
 
-        <div class="calender_days_container">
-          <div class="calender_days" *ngFor="let day of preDays">
+        <div class="calender_days" *ngFor="let day of preDays">
+          <div *ngIf="day.termine.length != 0">
+            <button class="calendar-day-off_event" (click)="ChooseEvent(-1, day.day)">{{day.day}}
+              <div class="event_indicator_on">•</div>
+            </button>
+          </div>
+          <div *ngIf="day.termine.length == 0">
+            <button class="calendar-day-off_free" (click)="ChooseEvent(0)">{{day.day}}
+              <div class="event_indicator_off">•</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="calender_days" *ngFor="let day of currentDays">
             <div *ngIf="day.termine.length != 0">
-              <button class="calendar-day-off_event" (click)="ChooseEvent(-1, day.day)">{{day.day}}
+              <button class="calendar-day_event" #preferedDay value={{day}} (click)="ChooseEvent(0, day.day)">{{day.day}}
                 <div class="event_indicator_on">•</div>
               </button>
             </div>
             <div *ngIf="day.termine.length == 0">
-              <button class="calendar-day-off_free" (click)="ChooseEvent(0)">{{day.day}}
+              <button class="calendar-day_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
                 <div class="event_indicator_off">•</div>
               </button>
             </div>
-          </div>
+        </div>
 
-          <div class="calender_days" *ngFor="let day of currentDays">
-              <div *ngIf="day.termine.length != 0">
-                <button class="calendar-day_event" #preferedDay value={{day}} (click)="ChooseEvent(0, day.day)">{{day.day}}
-                  <div class="event_indicator_on">•</div>
-                </button>
-              </div>
-              <div *ngIf="day.termine.length == 0">
-                <button class="calendar-day_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
-                  <div class="event_indicator_off">•</div>
-                </button>
-              </div>
+        <div class="calender_days" *ngFor="let day of postDays">
+          <div *ngIf="day.termine.length != 0">
+            <button class="calendar-day-off_event" #preferedDay value={{day}} (click)="ChooseEvent(1, day.day)">{{day.day}}
+              <div class="event_indicator_on">•</div>
+            </button>
           </div>
-
-          <div class="calender_days" *ngFor="let day of postDays">
-            <div *ngIf="day.termine.length != 0">
-              <button class="calendar-day-off_event" #preferedDay value={{day}} (click)="ChooseEvent(1, day.day)">{{day.day}}
-                <div class="event_indicator_on">•</div>
-              </button>
-            </div>
-            <div *ngIf="day.termine.length == 0">
-              <button class="calendar-day-off_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
-                <div class="event_indicator_off">•</div>
-              </button>
-            </div>
+          <div *ngIf="day.termine.length == 0">
+            <button class="calendar-day-off_free" #preferedDay value={{day}} (click)="ChooseEvent(0)">{{day.day}}
+              <div class="event_indicator_off">•</div>
+            </button>
           </div>
         </div>
       </div>
@@ -85,7 +83,7 @@
       </div>
       <div class="event_details" *ngIf="choosenEvents != []">
         <ng-container *ngFor="let event of choosenEvents">
-            {{event.hour}}:{{event.minute}} - {{event.event}} <br>
+            {{event.hour}}:{{event.minute}} - {{event.event}} - {{event.place}} <br>
         </ng-container>
       </div>
     </div>

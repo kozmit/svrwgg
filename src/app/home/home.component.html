@@ -1,10 +1,31 @@
+<body>
 
-<div class="content">
+  <div class="nextEvents_container">
+
+    <div class="nextEvents_heading">
+      Nächste Termine
+    </div>
+
+    <div class="nextEvents_entry" *ngFor="let event of nextEvents">
+      <br>
+      <b>{{event.day}}.{{event.month}}.{{event.year}} - {{event.hour}}:{{event.minute}}</b>
+      <br>
+      {{event.event}}
+      <br>
+      {{event.place}}
+      <br><br>
+    </div>
+  </div>
 
 
-  <div>
 
-    <br>
+
+
+
+
+
+  <div class="content_container">
+
     <h1>Willkommen</h1>
     <br>
     auf der offiziellen Seite des SV Rot-Weiß Groß Gleidingen
@@ -14,30 +35,4 @@
 
   </div>
 
-  <div class="nextEvents">
-
-    <div style="font-weight:bold">
-
-      <u>Anstehende Termine</u>
-
-    </div>
-
-    <div class="nextEvents_container" *ngFor="let event of nextEvents">
-
-      <div style="font-weight:bold;">
-
-        {{event.day}}.{{event.month}}.{{event.year}} - {{event.hour}}:{{event.minute}}
-
-      </div>
-
-      {{event.event}}
-
-      <br>
-      <br>
-
-    </div>
-
-  </div>
-
-</div>
-
+</body>

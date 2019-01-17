@@ -20,7 +20,7 @@ export class TermineComponent implements OnInit {
   public currentDays: Array<Day> = [];
   public postDays: Array<Day> = [];
   public preDays: Array<Day> = [];
-  public date: Date = new Date();  /// CHANGE EVERY MONTH ///
+  public date: Date = new Date();
 
   // Hilfsvariablen
   private i: number;
@@ -33,7 +33,7 @@ export class TermineComponent implements OnInit {
 
   ngOnInit() {
     this.i = 0;
-    this.month = this.date.getMonth() + 1;          /// CHANGE EVERY MONTH  ///
+    this.month = this.date.getMonth() + 1;
     this.year = this.date.getFullYear();
     this.SetDays();
     this.GetEvents();
@@ -182,25 +182,25 @@ export class TermineComponent implements OnInit {
 
     // Wochentag des ersten Tages des Monats ermitteln
 
-    if (this.date.getDay() === 1) {
+    if (this.date.getDay() === 2) {
       this.preDaysLength = 6;
     }
-    if (this.date.getDay() === 2) {
+    if (this.date.getDay() === 3) {
       this.preDaysLength = 0;
     }
-    if (this.date.getDay() === 3) {
+    if (this.date.getDay() === 4) {
       this.preDaysLength = 1;
     }
-    if (this.date.getDay() === 4) {
+    if (this.date.getDay() === 5) {
       this.preDaysLength = 2;
     }
-    if (this.date.getDay() === 5) {
+    if (this.date.getDay() === 6) {
       this.preDaysLength = 3;
     }
-    if (this.date.getDay() === 6) {
+    if (this.date.getDay() === 0) {
       this.preDaysLength = 4;
     }
-    if (this.date.getDay() === 0) {
+    if (this.date.getDay() === 1) {
       this.preDaysLength = 5;
     }
 

@@ -82,36 +82,36 @@ export class DataService {
 
     /////////////////  TRAINING  ////////////////////
 
-    new Event (18, '30', 6, 11, 2018, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 13, 11, 2018, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 20, 11, 2018, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 27, 11, 2018, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 6, 11, 2018, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 13, 11, 2018, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 20, 11, 2018, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 27, 11, 2018, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
 
-    new Event (18, '30', 5, 2, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 12, 2, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 19, 2, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 26, 2, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 5, 2, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 12, 2, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 19, 2, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 26, 2, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
 
-    new Event (18, '30', 5, 3, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 12, 3, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 19, 3, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
-    new Event (18, '30', 26, 3, 2019, 'Training 1. Herren - Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 5, 3, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 12, 3, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 19, 3, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
+    new Event (18, '30', 26, 3, 2019, 'Training 1. Herren', 'Sportplatz Groß Gleidingen'),
 
 
     /////////////////// SPIELE ///////////////////////
 
-    new Event (14, '00', 16, 2, 2019, 'Freundschaftsspiel gegen TUS Kleefeld Ü32- Sportplatz Groß Gleidingen'),
-    new Event (13, '00', 2, 3, 2019, 'Freundschaftsspiel gegen TSV Üfingen- Sportplatz Groß Gleidingen'),
+    new Event (14, '00', 16, 2, 2019, 'Freundschaftsspiel gegen TUS Kleefeld Ü32', 'Sportplatz Groß Gleidingen'),
+    new Event (13, '00', 2, 3, 2019, 'Freundschaftsspiel gegen TSV Üfingen', 'Sportplatz Groß Gleidingen'),
 
-    new Event (13, '00', 10, 3, 2019, 'Punktspiel gegen TSV Denstorf II - Sportplatz Denstorf'),
-    new Event (19, '00', 15, 3, 2019, 'Punktspiel gegen TSV Münstedt II - Sportplatz Groß Gleidingen'),
-    new Event (13, '00', 24, 3, 2019, 'Punktspiel gegen TuS Oberg II - Sportplatz Oberg'),
-    new Event (19, '00', 29, 3, 2019, 'Punktspiel gegen BSC Bülten II - Sportplatz Groß Gleidingen'),
+    new Event (13, '00', 10, 3, 2019, 'Punktspiel gegen TSV Denstorf II', 'Sportplatz Denstorf'),
+    new Event (19, '00', 15, 3, 2019, 'Punktspiel gegen TSV Münstedt II', 'Sportplatz Groß Gleidingen'),
+    new Event (13, '00', 24, 3, 2019, 'Punktspiel gegen TuS Oberg II', 'Sportplatz Oberg'),
+    new Event (19, '00', 29, 3, 2019, 'Punktspiel gegen BSC Bülten II', 'Sportplatz Groß Gleidingen'),
 
 
     ////////////////// SAUFEN  ///////////////////////
 
-    new Event (19, '00', 1, 12, 2018, 'Weihnachtsfeier 1. Herren - Üfinger Hof'),
+    new Event (19, '00', 1, 12, 2018, 'Weihnachtsfeier 1. Herren', 'Üfinger Hof'),
 
   ];
 
