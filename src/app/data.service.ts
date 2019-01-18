@@ -53,10 +53,6 @@ export class DataService {
       Strafraum von Clauen/Soßmar. Insgesamt eine starke erste Halbzeit unserer Rot-Weißen mit einem verdienten
       Sieg, auch wenn die Gesamtleistung verbesserungswürdig war.`, '02.11.2018'),
 
-    new Post('Oktoberfest', `Geiler Abend für unsere Truppe. Erst Fotoshooting Termin, welcher
-      bereits mit 80 Bieren für gute Stimmung sorgte, ging es dannach zum Üfinger Hof wo feucht
-      fröhlich weiter gefeiert wurde.`, '02.11.2018'),
-
   ];
 
   //////////////// BLOG POSTS //////////////////

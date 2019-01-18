@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 import { BlogComponent } from './blog/blog.component';
 
-import { KaderComponent } from './kader/kader.component';
+import { MannschaftComponent } from './mannschaft/mannschaft.component';
 
 import { TermineComponent } from './termine/termine.component';
 
@@ -20,7 +20,7 @@ const router: Routes = [
 
   { path: 'blog', component: BlogComponent },
 
-  { path: 'kader', component: KaderComponent },
+  { path: 'mannschaft', component: MannschaftComponent },
 
   { path: 'termine', component: TermineComponent },
 

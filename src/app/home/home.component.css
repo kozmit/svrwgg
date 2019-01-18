@@ -3,8 +3,9 @@ body{
 }
 
 .content_container{
+  margin-left: 30%;
   width: 70%;
-  float:left;
+  padding:10px;
   text-align: center;
 }
 

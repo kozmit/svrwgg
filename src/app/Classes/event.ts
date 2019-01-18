@@ -8,7 +8,7 @@ export class Event {
     this.year = year;
     this.event = event;
     this.place = place;
-    this.date = new Date(month + '.' + day + '.' + year);
+    this.date = new Date(year, month, day);
   }
 
   date: Date;

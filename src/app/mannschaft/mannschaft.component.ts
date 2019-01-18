@@ -6,11 +6,11 @@ import { DebugContext } from '@angular/core/src/view';
 import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-kader',
-  templateUrl: './kader.component.html',
-  styleUrls: ['./kader.component.css']
+  selector: 'app-mannschaft',
+  templateUrl: './mannschaft.component.html',
+  styleUrls: ['./mannschaft.component.css']
 })
-export class KaderComponent implements OnInit {
+export class MannschaftComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
 

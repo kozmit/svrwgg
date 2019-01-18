@@ -9,10 +9,12 @@ import { DataService } from './data.service';
 export class AppComponent implements OnInit {
   title = 'svrwgg';
 
+  navbarOpen = false;
 
   public highlight: number;
-
   public imageUrlArray: String[] = [];
+
+  private navbar: HTMLElement;
 
   constructor(private dataService: DataService) { }
 
@@ -24,5 +26,16 @@ export class AppComponent implements OnInit {
 
   SetHightlight(int: number) {
     this.highlight = int;
+  }
+
+  toggleNavbar() {
+
+    this.navbar = document.getElementById('myTopnav');
+
+    if (this.navbar.className === 'topnav') {
+      this.navbar.className += ' responsive';
+    } else {
+      this.navbar.className = 'topnav';
+    }
   }
 }

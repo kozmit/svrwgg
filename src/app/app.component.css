@@ -51,21 +51,23 @@ body{
 .navbar{
   height:100%;
   width:60%;
-  padding:0px;
   margin-left:29%;
   margin-bottom: 0px;
 }
 
 .navbar_entry{
+  float:left;
   height:100%;
   width:20%;
 }
 
 .navbar_link{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 1.5vw;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   color:white;
-  font-size: 15px;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
 }
 
 .navbar_link:hover{
@@ -76,7 +78,7 @@ body{
 .navbar_link_highlighted{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color:white;
-  font-size: 15px;
+  font-size: 1.5vw;
   text-decoration: none;
   border-bottom: 2px solid;
   border-color: white;
@@ -135,8 +137,93 @@ body{
 }
 
 
+
+
+
+
+
+/* TESTING */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  height:100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  height:100%;
+  width:15%;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.topnav a.close {
+  display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 450px) {
+  .topnav a:not(:last-child) {display: none;}
+
+  .topnav a.icon {
+    font-size: 7vw;
+    float: right;
+    display: block;
+    color: white;
+  }
+}
+
+/* The "responsive" class is added to the topnav with script when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 450px) {
+
+  .topnav.responsive {
+    position: absolute;
+    z-index: 1;
+    margin-top: 12%;
+    color:white;
+  }
+
+  .topnav.responsive a.close {
+    display: inline;
+    color:white;
+    position: absolute;
+    float: right;
+    display: block;
+  }
+  .topnav.responsive a {
+    background-color: rgba(255, 0, 0, 0.9);
+    font-size: 4vw;
+    height: 5%;;
+    width: 150px;
+    float: none;
+    display: block;
+    text-align: right;
+    text-align: center;
+  }
+}
+
+/* TESTING */
+
+
+
+
 @media (max-width: 450px){
   .side_content{
+    width:90%;
+    margin-left:5%;
+  }
+
+  .slideshow{
     width:90%;
     margin-left:5%;
   }
@@ -163,7 +250,7 @@ body{
   }
 
   .navbar_link{
-    font-size: 15px;
+    font-size: 4vw;
   }
 
   .navbar_link_highlighted{

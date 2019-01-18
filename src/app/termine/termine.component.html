@@ -79,11 +79,13 @@
     <div class="event_container">
       <div class="event_title">
         Termine<br>
-        _____________________________________________
+        _____________________________________________ <br><br>
       </div>
       <div class="event_details" *ngIf="choosenEvents != []">
         <ng-container *ngFor="let event of choosenEvents">
-            {{event.hour}}:{{event.minute}} - {{event.event}} - {{event.place}} <br>
+            {{event.hour}}:{{event.minute}} Uhr<br>
+            {{event.event}}<br>
+            {{event.place}} <br>
         </ng-container>
       </div>
     </div>
