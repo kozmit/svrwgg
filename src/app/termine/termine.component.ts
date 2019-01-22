@@ -180,28 +180,17 @@ export class TermineComponent implements OnInit {
       this.maxDayPreMonth = 28;
     }
 
-    // Wochentag des ersten Tages des Monats ermitteln
+    // Wochentag des ersten Tages des Monats ermitteln - 0 = Sunday, 1 = Monday etc...
 
-    if (this.date.getDay() === 2) {
-      this.preDaysLength = 6;
-    }
-    if (this.date.getDay() === 3) {
-      this.preDaysLength = 0;
-    }
-    if (this.date.getDay() === 4) {
-      this.preDaysLength = 1;
-    }
-    if (this.date.getDay() === 5) {
-      this.preDaysLength = 2;
-    }
-    if (this.date.getDay() === 6) {
-      this.preDaysLength = 3;
-    }
-    if (this.date.getDay() === 0) {
-      this.preDaysLength = 4;
-    }
-    if (this.date.getDay() === 1) {
-      this.preDaysLength = 5;
+    for (this.i = 0; this.i <= 7; this.i++) {
+
+      if (this.date.getDay() === 0) {
+        this.preDaysLength = 6;
+      }
+
+      if (this.date.getDay() !== 0 && this.date.getDay() === this.i) {
+        this.preDaysLength = this.i - 1;
+      }
     }
 
     // PreDays Array belegen

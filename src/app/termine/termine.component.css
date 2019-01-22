@@ -1,5 +1,5 @@
 body{
-  height:700px;
+  height:900px;
 }
 
 button::-moz-focus-inner {
@@ -14,7 +14,7 @@ button::-moz-focus-inner {
   margin-left:5%;
   margin-top:5%;
   width:90%;
-  height: 80%;
+  height: 50%;
 }
 
 .month {

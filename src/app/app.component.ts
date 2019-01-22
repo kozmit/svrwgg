@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.highlight = 1;
     this.imageUrlArray.push('../assets/Mannschaftsbild-Slideshow.jpg');
     this.imageUrlArray.push('../assets/Spielfeld-Slideshow.jpg');
     this.imageUrlArray.push('../assets/Oktoberfest-Slideshow.jpg');
