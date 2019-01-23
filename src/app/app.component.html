@@ -31,15 +31,15 @@
 
       <div class="topnav" id="myTopnav">
 
-        <a routerLink="home">Startseite</a>
+        <a class="navEntry" id="Startseite" (click)="SetHighlight('Startseite')" routerLink="home">Startseite</a>
 
-        <a routerLink="mannschaft">Mannschaft</a>
+        <a class="navEntry" id="Mannschaft" (click)="SetHighlight('Mannschaft')" routerLink="mannschaft">Mannschaft</a>
 
-        <a routerLink="blog">Blog</a>
+        <a class="navEntry" id="Blog" (click)="SetHighlight('Blog')" routerLink="blog">Blog</a>
 
-        <a routerLink="termine">Termine</a>
+        <a class="navEntry" id="Termine" (click)="SetHighlight('Termine')" routerLink="termine">Termine</a>
 
-        <a routerLink="impressum">Impressum</a>
+        <a class="navEntry" id="Impressum" (click)="SetHighlight('Impressum')" routerLink="impressum">Impressum</a>
 
         <a class="icon" (click)="toggleNavbar()">
           <i class="fa fa-bars"></i>
