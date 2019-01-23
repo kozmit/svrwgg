@@ -35,9 +35,8 @@
 }
 
 .player_picture{
-  height:90%;
-  width:35%;
-  max-width: 80px;
+  height:70px;
+  width:70px;
 }
 
 @media (max-width:450px) {
@@ -46,6 +45,23 @@
     font-size:15px;
   }
   .player_info{
-    font-size: 8px;
+    font-size: 7px;
+  }
+
+  .player_picture{
+    height:35px;
+    width:35px;
+  }
+}
+
+@media (max-width: 800px){
+
+  .player_info{
+    font-size: 10px;
+  }
+
+  .player_picture{
+    height:50px;
+    width:50px;
   }
 }

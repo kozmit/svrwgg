@@ -83,7 +83,7 @@
       </div>
       <div class="event_details" *ngIf="choosenEvents != []">
         <ng-container *ngFor="let event of choosenEvents">
-            {{event.hour}}:{{event.minute}} Uhr<br>
+            {{event.day}}.{{event.month}}.{{event.year}} - {{event.hour}}:{{event.minute}} Uhr<br>
             {{event.event}}<br>
             {{event.place}} <br>
         </ng-container>

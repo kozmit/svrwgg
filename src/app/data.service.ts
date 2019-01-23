@@ -15,27 +15,27 @@ export class DataService {
 
   players: Player[] = [
     new Player('Christian Hotop', 'Sturm', '../assets/test_picture.png'),
-    new Player('Hendrik Rasmussen', 'Sturm', '../assets/test_picture.png'),
-    new Player('Jan-Michael Köhler', 'Sturm', '../assets/test_picture.png'),
+    new Player('Hendrik Rasmussen', 'Sturm', '../assets/hendrik_rasmussen.jpg'),
+    new Player('Jan-Michael Köhler', 'Sturm', '../assets/michael_köhler.jpg'),
     new Player('Bastian Blume', 'Verteidigung', '../assets/test_picture.png'),
     new Player('Tobias Schreiber', 'Sturm', '../assets/test_picture.png'),
     new Player('Arne Feyerabend', 'Mittelfeld', '../assets/test_picture.png'),
     new Player('Diego Villaverde Varela', 'Mittelfeld', '../assets/test_picture.png'),
     new Player('Cedric Müller', 'Sturm', '../assets/test_picture.png'),
-    new Player('Thorben Grabenhorst', 'Sturm', '../assets/test_picture.png'),
+    new Player('Thorben Grabenhorst', 'Sturm', '../assets/thorben_grabenhorst.jpg'),
     new Player('Andre Heusinger', 'Tor', '../assets/test_picture.png'),
-    new Player('Jonathan Polze', 'Sturm', '../assets/test_picture.png'),
+    new Player('Jonathan Polze', 'Sturm', '../assets/jonathan_polze.jpg'),
     new Player('Kai Leifheit', 'Verteidigung', '../assets/test_picture.png'),
     new Player('Christoph Kuschnik', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Markus Laschak', 'Verteidigung', '../assets/test_picture.png'),
+    new Player('Markus Laschak', 'Verteidigung', '../assets/markus_laschak.jpg'),
     new Player('Markus Meyer', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Maximilian Scholz', 'Sturm', '../assets/test_picture.png'),
+    new Player('Maximilian Scholz', 'Sturm', '../assets/maximilian_scholz.jpg'),
     new Player('Nick Weichsel', 'Verteidigung', '../assets/test_picture.png'),
-    new Player('Gregor Klink', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Patrick Rau', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Sven Zähres', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Steffen Schreiber', 'Mittelfeld', '../assets/test_picture.png'),
-    new Player('Thomas Przyklenk', 'Verteidigung', '../assets/test_picture.png'),
+    new Player('Gregor Klink', 'Mittelfeld', '../assets/gregor_klink.jpg'),
+    new Player('Patrick Rau', 'Mittelfeld', '../assets/patrick_rau.jpg'),
+    new Player('Sven Zähres', 'Mittelfeld', '../assets/sven_zähres.jpg'),
+    new Player('Steffen Schreiber', 'Mittelfeld', '../assets/steffen_schreiber.jpg'),
+    new Player('Thomas Przyklenk', 'Verteidigung', '../assets/thomas_przyklenk.jpg'),
     new Player('Tim Dagger', 'Sturm', '../assets/test_picture.png'),
     new Player('Tim Petruszek', 'Mittelfeld', '../assets/test_picture.png'),
     new Player('Willy Schüler', 'Mittelfeld', '../assets/test_picture.png'),
@@ -48,6 +48,24 @@ export class DataService {
 
   posts: Post[] = [
     new Post('Spiel gegen Clauen/ Soßmar II', `Dieses Wochenende hat sich die Truppe mal wieder stark in Zeug gelegt und
+      früh gute Chancen herausgespielt. Die 2:0 Führung in der ersen Halbzeit war somit mehr als verdient.
+      In der zweiten Halbzeit wurde das Ergebnis verwaltet, es kamen nichtmehr viele Angriffe bis in den
+      Strafraum von Clauen/Soßmar. Insgesamt eine starke erste Halbzeit unserer Rot-Weißen mit einem verdienten
+      Sieg, auch wenn die Gesamtleistung verbesserungswürdig war.`, '02.11.2018'),
+
+      new Post('Spiel gegen Clauen/ Soßmar II', `Dieses Wochenende hat sich die Truppe mal wieder stark in Zeug gelegt und
+      früh gute Chancen herausgespielt. Die 2:0 Führung in der ersen Halbzeit war somit mehr als verdient.
+      In der zweiten Halbzeit wurde das Ergebnis verwaltet, es kamen nichtmehr viele Angriffe bis in den
+      Strafraum von Clauen/Soßmar. Insgesamt eine starke erste Halbzeit unserer Rot-Weißen mit einem verdienten
+      Sieg, auch wenn die Gesamtleistung verbesserungswürdig war.`, '02.11.2018'),
+
+      new Post('Spiel gegen Clauen/ Soßmar II', `Dieses Wochenende hat sich die Truppe mal wieder stark in Zeug gelegt und
+      früh gute Chancen herausgespielt. Die 2:0 Führung in der ersen Halbzeit war somit mehr als verdient.
+      In der zweiten Halbzeit wurde das Ergebnis verwaltet, es kamen nichtmehr viele Angriffe bis in den
+      Strafraum von Clauen/Soßmar. Insgesamt eine starke erste Halbzeit unserer Rot-Weißen mit einem verdienten
+      Sieg, auch wenn die Gesamtleistung verbesserungswürdig war.`, '02.11.2018'),
+
+      new Post('Spiel gegen Clauen/ Soßmar II', `Dieses Wochenende hat sich die Truppe mal wieder stark in Zeug gelegt und
       früh gute Chancen herausgespielt. Die 2:0 Führung in der ersen Halbzeit war somit mehr als verdient.
       In der zweiten Halbzeit wurde das Ergebnis verwaltet, es kamen nichtmehr viele Angriffe bis in den
       Strafraum von Clauen/Soßmar. Insgesamt eine starke erste Halbzeit unserer Rot-Weißen mit einem verdienten
