@@ -24,11 +24,23 @@ body{
 }
 
 .nextEvents_entry{
-  font-size:8px;
+  font-size:10px;
   border-bottom: 1px black solid;
 }
 
 .nextEvents_entry:last-of-type{
   border-bottom: none;
+}
+
+@media screen and (max-width: 450px){
+  .nextEvents_entry{
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .nextEvents_entry{
+    font-size: 9px;
+  }
 }
 

@@ -120,20 +120,20 @@ body{
   font-size: 1.5vw;
 }
 
+.topnav a.highlight{
+  border-bottom: 1px solid white;
+}
+
 .topnav a:hover{
   background-color: darkred;
 }
 
 .topnav a:first-of-type{
-  margin-left: 7%;
+  margin-left: 8%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none;
-}
-
-.topnav a.close {
   display: none;
 }
 

@@ -11,14 +11,20 @@
   margin-left:5%;
 }
 
+.kader_position{
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
 .player_container{
   margin: 1%;
-  float:left;
   height: 10%;
   width:45%;
   padding:2px;
   border: solid;
   border-width: 1px;
+  float:left;
 }
 
 .player_info{

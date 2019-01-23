@@ -25,10 +25,6 @@ export class AppComponent implements OnInit {
     this.imageUrlArray.push('../assets/Oktoberfest-Slideshow.jpg');
   }
 
-  SetHightlight(int: number) {
-    this.highlight = int;
-  }
-
   toggleNavbar() {
 
     this.navbar = document.getElementById('myTopnav');
