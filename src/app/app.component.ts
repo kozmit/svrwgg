@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.highlight = document.getElementById('Startseite');
-    this.highlight.className += ' active';
+    this.highlight.className += 'active';
     this.imageUrlArray.push('../assets/Mannschaftsbild-Slideshow.jpg');
     this.imageUrlArray.push('../assets/Spielfeld-Slideshow.jpg');
     this.imageUrlArray.push('../assets/Oktoberfest-Slideshow.jpg');

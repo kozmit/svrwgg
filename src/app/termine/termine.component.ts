@@ -32,6 +32,7 @@ export class TermineComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.date = new Date(this.date.getFullYear(), this.date.getMonth(), 1);
     this.i = 0;
     this.month = this.date.getMonth() + 1;
     this.year = this.date.getFullYear();
@@ -181,6 +182,10 @@ export class TermineComponent implements OnInit {
     }
 
     // Wochentag des ersten Tages des Monats ermitteln - 0 = Sunday, 1 = Monday etc...
+
+    console.log(this.date);
+    console.log(this.date.getDay());
+    // console.log();
 
     for (this.i = 0; this.i <= 7; this.i++) {
 
